@@ -286,7 +286,7 @@ spec:
         - name: controller
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/net-istio/cmd/controller@sha256:daacf3cce483effa694c4097653e42b11e89ea5ccb6bb46409cdf531d46f2dd3
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/net-istio0.25:net-istio-controller
           resources:
             requests:
               cpu: 30m
@@ -364,7 +364,7 @@ spec:
         - name: webhook
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/net-istio/cmd/webhook@sha256:c960934328b7c2fd5685b5185c37fbcf4065f34b6c563f396b7cf7565ae70225
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/net-istio0.25:net-istio-webhook
           resources:
             requests:
               cpu: 20m
