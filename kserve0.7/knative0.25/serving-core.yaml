@@ -3522,7 +3522,7 @@ metadata:
 spec:
   # This is the Go import path for the binary that is containerized
   # and substituted here.
-  image: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:5af97fa5e19c6fd1e04642e7cf6eb01e6982b4cfee19d8fd16649423277c2eb9
+  image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:queue-proxy
 
 ---
 # Copyright 2018 The Knative Authors
@@ -3897,7 +3897,7 @@ metadata:
 data:
   # This is the Go import path for the binary that is containerized
   # and substituted here.
-  queueSidecarImage: gcr.io/knative-releases/knative.dev/serving/cmd/queue@sha256:5af97fa5e19c6fd1e04642e7cf6eb01e6982b4cfee19d8fd16649423277c2eb9
+  queueSidecarImage: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:config-deployment
   _example: |-
     ################################
     #                              #
@@ -4827,7 +4827,7 @@ spec:
         - name: activator
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/activator@sha256:00aeb9267dc6445bbb11cb90636e9cde44404c6303d55b81aa074381b4989eef
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:activator
           # The numbers are based on performance test results from
           # https://github.com/knative/serving/issues/1625#issuecomment-511930023
           resources:
@@ -4986,7 +4986,7 @@ spec:
         - name: autoscaler
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/autoscaler@sha256:ca3bad368a2ac40f33ad9e47c1075cc2b833301b4bc772fb84c51f52cc1c0a35
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:autoscaler
           resources:
             requests:
               cpu: 100m
@@ -5123,7 +5123,7 @@ spec:
         - name: controller
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/controller@sha256:50fcbbc79b1078991280bf423e590c8904882dc8750c7f7d61bc06d944a052f2
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:controller
           resources:
             requests:
               cpu: 100m
@@ -5238,7 +5238,7 @@ spec:
         - name: domain-mapping
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping@sha256:3b7da888fafca8cc5ba5e2aa62d6f97751d50890ed9d0b01aabce66a7d26351e
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:domain-mapping
           resources:
             requests:
               cpu: 30m
@@ -5328,7 +5328,7 @@ spec:
         - name: domainmapping-webhook
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/domain-mapping-webhook@sha256:a6529f0625483c81741c92895e4d54be8a103ecc5801e7c3aa049d3b3ea7cc90
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:domain-mapping-webhook
           resources:
             requests:
               cpu: 100m
@@ -5531,7 +5531,7 @@ spec:
         - name: webhook
           # This is the Go import path for the binary that is containerized
           # and substituted here.
-          image: gcr.io/knative-releases/knative.dev/serving/cmd/webhook@sha256:382a1d64ea0686da2b973c95be96fcae29ac25b256b90f5735b1479a93d19c7a
+          image: registry.cn-hangzhou.aliyuncs.com/gonglinqi/knative0.25:webhook
           resources:
             requests:
               cpu: 100m
